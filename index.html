@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.1/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./include/css/style.css">
+ </head>
+
+  <body>
+
+    <div class="container" id="content">
+      <div class="row" id="myTab">
+        <div class="tabbable">
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle=tab>Graph 1</a></li>
+            <li><a href="#tab2" data-toggle=tab>Graph 2</a></li>
+            <li><a href="#tab3" data-toggle=tab>Graph 3</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div id="id1">
+                <h1 align="center">
+                  Age-wise population distribution in terms of literate population
+                </h1>
+              </div>
+            </div><!--End Tab1-->
+            <div class="tab-pane" id="tab2">
+              <div id="id2">
+                <h1 align="center">
+                  Graduate Population of India - State-wise and Gender-wise
+                </h1>
+              </div>
+            </div>
+            <div class="tab-pane" id="tab3">
+              <div class="col-md-12 well" id="chart">
+                <h1 align="center">
+                  Education Category wise - all India data combined together
+                </h1>
+              </div><!-- end #chart.col-md-12 -->
+            </div>
+        </div><!-- End Tabbable-->
+           </div><!--End Tab content -->
+     </div><!-- End MyId -->
+    </div><!-- End content-->
+  <!-- All Javascript at the bottom of the page for faster page loading -->
+
+   <!-- First try for the online version of jQuery-->
+   <script src="http://code.jquery.com/jquery.js"></script>
+
+   <!-- Bootstrap JS -->
+  
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="d3asgn.js"></script>
+<script>
+ jQuery(document).ready(function($) {
+     tab1();
+     tab2();
+     tab3();
+  });
+</script>
+
+  </body>
+</html>
